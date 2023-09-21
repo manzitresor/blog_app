@@ -29,4 +29,16 @@ RSpec.describe Post, type: :model do
   it '#posts_counter' do
     expect { subject.save }.to change { user.reload.postsCounter }.by(1)
   end
+  it 'should return last 5 recent comments ' do
+    post = create(:post, author: user)
+
+    create(:comment, :post, post:, user:, created_at: 1.day.ago)
+    create(:comment, :post, post:, user:, created_at: 2.hours.ago)
+    create(:comment, :post, post:, user:, created_at: 1.hour.ago)
+    create(:comment, :post, post:, user:, created_at: 1.hour.ago)
+    create(:comment, :post, post:, user:, created_at: 1.hour.ago)
+    recent_comments = post.send(:recent_comments)
+
+    expect(recent_comments.count).to eq(5)
+  end
 end
