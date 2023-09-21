@@ -16,7 +16,6 @@ RSpec.describe User, type: :model do
     expect(subject).to_not be_valid
   end
   it 'should return last 3 recent posts ' do
-    post = create(:post, author: user)
     user = create(:user)
     user_post = create(:post, author: user, created_at: 1.day.ago)
     post1 = create(:post, author: user, created_at: 2.hours.ago)
