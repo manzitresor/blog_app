@@ -15,4 +15,14 @@ RSpec.describe User, type: :model do
     subject.postsCounter = -1
     expect(subject).to_not be_valid
   end
+  it "should return last 3 recent posts " do
+    post = create(:post, author: user)
+    user = create(:user) 
+    post = create(:post, author: user, created_at: 1.day.ago)
+    post1 = create(:post, author: user, created_at: 2.hours.ago)
+    post2 = create(:post, author: user, created_at: 1.hour.ago)
+    recent_posts = user.recent_posts
+            
+    expect(recent_posts).to eq([post2,post1,post])
+  end
 end
