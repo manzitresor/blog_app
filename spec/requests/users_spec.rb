@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
-  describe "GET /index" do
+RSpec.describe 'Users', type: :request do
+  describe 'GET /index' do
     before :each do
       get '/users'
     end
@@ -15,7 +15,7 @@ RSpec.describe "Users", type: :request do
       expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
-  describe "GET /show" do
+  describe 'GET /show' do
     before :each do
       get '/users/:id'
     end
