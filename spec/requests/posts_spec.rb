@@ -15,4 +15,18 @@ RSpec.describe "Posts", type: :request do
       expect(response.body).to include('User posts')
     end
   end
+  describe "GET /show" do
+    before :each do
+      get '/users/:user_id/posts/:id'
+    end
+    it 'should returns http success' do
+      expect(response).to have_http_status(:success)
+    end
+    it 'should render index' do
+      expect(response).to render_template(:show)
+    end
+    it 'should includes correct placeholder text' do
+      expect(response.body).to include('User posts with Id')
+    end
+  end
 end
