@@ -1,5 +1,6 @@
-<ul>
+
 <% @posts.each do |post| %>
+<ul>
  <li>
       <a href="<%= user_post_path(post.author_id, post.id) %>">
         <h2><%= post.title %></h2>
@@ -8,7 +9,8 @@
         <span>Likes: <%= post.likes.length %></span>
       </a>
     </li>
-    <ul >
+    <ul>
+    
       <% unless post.comments.any? %>
         <h2>No Comments</h2>
       <% end %>
