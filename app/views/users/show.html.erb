@@ -1,1 +1,22 @@
-<h1> Here is post for a given user id</h1>
+<div>
+<%= render partial: "userHeader", users: @users%>
+<div class="bio-container">
+<p>Bio</p>
+<p><%= @users[0].bio %></p>
+</div>
+<% @posts.each do |post| %>
+    <li>
+    <a href="<%= user_post_path(post.author_id,post.id) %>">
+    <h1><%= post.title %></h1>
+    <p><%= post.text %><p>
+    <span>Comments: <%= post.comments.count %></span>
+    <span>Likes: <%= post.likes.count %></span>
+    </a>
+    </li>
+<% end %>
+<% unless @users[0].posts.length <=3 %>
+<button>
+<a href="<%= user_posts_path(@users[0])%>">see all posts</a>
+</button>
+<%end %>
+</div>
