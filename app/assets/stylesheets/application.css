@@ -83,3 +83,11 @@
   text-decoration: none;
   color: black;
 }
+
+.comment-like-post {
+    position: absolute;
+    display: flex;
+    padding-left: 78%;
+    gap: 8px;
+    margin-top: -80px;
+}
