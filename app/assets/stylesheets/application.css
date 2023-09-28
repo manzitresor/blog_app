@@ -67,3 +67,19 @@
     padding-left: 78%;
     gap: 8px;
 }
+
+.comment-container {
+    border: 2px solid black;
+    list-style: none;
+    padding: 4%;
+}
+
+.see-btn {
+    padding: 10px;
+    background-color: white;
+}
+
+.see-btn a{
+    text-decoration: none;
+    color: black;
+}
