@@ -1,0 +1,51 @@
+.heading-one {
+    color: blue;
+}
+
+.profile {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-container {
+    display: flex;
+    margin: 20px;
+}
+
+.user-card {
+    margin-left: 20px;
+    border: 2px solid black;
+    width: 300px;
+    padding: 20px;
+}
+
+.user-name {
+    text-decoration: none;
+    color: black;
+}
+
+.user-name:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.user-card p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 20%;
+}
+
+.bio-container {
+    border: 2px solid black;
+    padding: 10px;
+}
