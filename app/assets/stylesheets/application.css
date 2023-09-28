@@ -1,85 +1,85 @@
 .heading-one {
-    color: blue;
+  color: blue;
 }
 
 .profile {
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .user-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .user-container {
-    display: flex;
-    margin: 20px;
+  display: flex;
+  margin: 20px;
 }
 
 .user-card {
-    margin-left: 20px;
-    border: 2px solid black;
-    width: 300px;
-    padding: 20px;
+  margin-left: 20px;
+  border: 2px solid black;
+  width: 300px;
+  padding: 20px;
 }
 
 .user-name {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .user-name:hover {
-    cursor: pointer;
-    color: blue;
+  cursor: pointer;
+  color: blue;
 }
 
 .user-card p {
-    position: absolute;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 10px;
-    padding-left: 20%;
+  position: absolute;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 20%;
 }
 
 .bio-container {
-    border: 2px solid black;
-    padding: 10px;
+  border: 2px solid black;
+  padding: 10px;
 }
 
 .blog-container {
-    border: 2px solid black;
-    list-style: none;
-    height: 150px;
+  border: 2px solid black;
+  list-style: none;
+  height: 150px;
 }
 
 .blog {
-    text-decoration: none;
-    color: black
+  text-decoration: none;
+  color: black;
 }
 
 .comment-like {
-    position: absolute;
-    display: flex;
-    padding-left: 78%;
-    gap: 8px;
+  position: absolute;
+  display: flex;
+  padding-left: 78%;
+  gap: 8px;
 }
 
 .comment-container {
-    border: 2px solid black;
-    list-style: none;
-    padding: 4%;
+  border: 2px solid black;
+  list-style: none;
+  padding: 4%;
 }
 
 .see-btn {
-    padding: 10px;
-    background-color: white;
+  padding: 10px;
+  background-color: white;
 }
 
-.see-btn a{
-    text-decoration: none;
-    color: black;
+.see-btn a {
+  text-decoration: none;
+  color: black;
 }
