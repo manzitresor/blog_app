@@ -7,6 +7,7 @@ class PostsController < ApplicationController
   def show
     @posts = [Post.find(params[:id])]
     @comment = Comment.new
+    @like = Like.new
   end
   def new
     @post = Post.new
