@@ -1,15 +1,93 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.heading-one {
+  color: blue;
+}
+
+.profile {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-container {
+  display: flex;
+  margin: 20px;
+}
+
+.user-card {
+  margin-left: 20px;
+  border: 2px solid black;
+  width: 30%;
+  padding: 20px;
+}
+
+.user-name {
+  text-decoration: none;
+  color: black;
+}
+
+.user-name:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.user-card p {
+  position: absolute;
+  font-weight: bold;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 20%;
+}
+
+.bio-container {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.blog-container {
+  border: 2px solid black;
+  list-style: none;
+  height: 150px;
+}
+
+.blog {
+  text-decoration: none;
+  color: black;
+}
+
+.comment-like {
+  position: absolute;
+  display: flex;
+  padding-left: 78%;
+  gap: 8px;
+}
+
+.comment-container {
+  border: 2px solid black;
+  list-style: none;
+  padding: 4%;
+}
+
+.see-btn {
+  padding: 10px;
+  background-color: white;
+}
+
+.see-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.comment-like-post {
+  position: absolute;
+  display: flex;
+  padding-left: 78%;
+  gap: 8px;
+  margin-top: -80px;
+}

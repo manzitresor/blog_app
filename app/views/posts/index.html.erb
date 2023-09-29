@@ -1,1 +1,25 @@
-<h1>User posts</h1>
+<%= render partial: "users/userHeader", users: @users%>
+
+<% @posts.each do |post| %>
+<ul class="blog-container">
+ <li class="blog-card">
+      <a href="<%= user_post_path(post.author_id, post.id) %>" class="blog">
+        <h2><%= post.title %></h2>
+        <p><%= post.text %></p>
+        <span>Comments: <%= post.comments.length %></span>
+        <span>Likes: <%= post.likes.length %></span>
+      </a>
+    </li>
+    </ul>
+    <ul class="comment-container">
+      <% unless post.comments.any? %>
+        <h2>No Comments</h2>
+      <% end %>
+      <% post.recent_comments.each do |comment| %>
+        <li >
+          <span><%= User.find(comment.user_id).name %>:</span>
+          <span><%= comment.text %></span>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
