@@ -1,0 +1,14 @@
+<section>
+  <h1>Add a new comment</h1>
+  <%= form_with model:@comment, url:user_post_comments_path do |f| %>
+    <div>
+      <div>
+        <%= f.text_field :text, placeholder: 'type...' %>
+        <%= f.submit "Add Comment"%>
+      </div>
+    </div>
+  <% end %>
+  <% if flash[:alert].present? %>
+    <%= flash[:alert] %>
+  <% end %>
+</section>
