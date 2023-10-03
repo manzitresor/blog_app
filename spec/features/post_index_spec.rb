@@ -44,6 +44,18 @@ RSpec.describe 'posts#index', type: :feature do
               expect(page).to have_content(post.text.to_s)
             end
           end
+        it 'I can see the first comments on a post.' do
+            @posts.each do |post|
+              post.recent_comments.each do |comment|
+                expect(page).to have_content(comment.user.text)
+              end
+            end
+          end 
+          it 'I can see how many comments a post has' do
+            @posts.each do |post|
+              expect(page).to have_content("#{post.comments_counter}")
+            end
+          end  
       
         
     end
