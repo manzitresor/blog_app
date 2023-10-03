@@ -40,10 +40,10 @@ RSpec.describe 'posts#index', type: :feature do
       expect(page).to have_content(@user_one.name.to_s)
     end
     it 'I can see how many comments it has' do
-      expect(page).to have_content(@post1.comments_counter)
+      expect(page).to have_content(@post1.comments_counter.to_s)
     end
     it 'I can see how many likes a post has' do
-      expect(page).to have_content("#{@post1.likes_counter}")
+      expect(page).to have_content(@post1.likes_counter.to_s)
     end
 
     it 'should see body of the post' do
