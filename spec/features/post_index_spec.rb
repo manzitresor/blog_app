@@ -28,6 +28,12 @@ RSpec.describe 'posts#index', type: :feature do
         it 'can see the user profile picture.' do
             expect(page).to have_css("img[src='#{@user_one.photo}']")
         end
+        it 'I can see the user username.' do
+            expect(page).to have_content("#{@user_one.name}")
+        end
+        it 'I can see the number of posts the user has written.' do
+            expect(page).to have_content("#{@user_one.post_counter}")
+        end
         
     end
 end
