@@ -34,6 +34,17 @@ RSpec.describe 'posts#index', type: :feature do
         it 'I can see the number of posts the user has written.' do
             expect(page).to have_content("#{@user_one.post_counter}")
         end
+        it 'should see title of the post' do
+            @posts.each do |post|
+              expect(page).to have_content(post.title)
+            end
+          end
+        it 'should see body of the post' do
+            @posts.each do |post|
+              expect(page).to have_content(post.text.to_s)
+            end
+          end
+      
         
     end
 end
