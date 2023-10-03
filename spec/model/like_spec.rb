@@ -9,6 +9,6 @@ RSpec.describe Like, type: :model do
     expect(subject).to be_valid
   end
   it '#like_counter' do
-    expect { subject.save }.to change { post.reload.linkesCounter }.by(1)
+    expect { subject.save }.to change { post.reload.likes_counter }.by(1)
   end
 end

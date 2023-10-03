@@ -3,6 +3,6 @@ FactoryBot.define do
     name { 'Manzi Tresor' }
     photo { 'https://example.com/default.jpg' }
     bio { 'This is a sample bio.' }
-    postsCounter { 0 }
+    post_counter { 0 }
   end
 end

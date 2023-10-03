@@ -3,7 +3,7 @@ FactoryBot.define do
     author { association(:user) }
     title { 'Hello' }
     text { 'This is my first post' }
-    commentsCounter { 2 }
-    linkesCounter { 1 }
+    comments_counter { 2 }
+    likes_counter { 1 }
   end
 end
