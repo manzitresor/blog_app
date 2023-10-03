@@ -60,8 +60,13 @@ RSpec.describe 'posts#index', type: :feature do
             @posts.each do |post|
               expect(page).to have_content("#{post.likes_counter}")
             end
-          end 
-      
-        
+          end    
     end
+    describe 'GET show/page' do
+        it 'When I click on a post, I am redirected to that post show page.' do
+          post = @posts.first
+          click_link(post.title)
+          expect(page).to have_current_path(user_post_path(post.author, post))
+        end
+      end
 end
