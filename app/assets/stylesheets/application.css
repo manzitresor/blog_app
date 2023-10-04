@@ -91,3 +91,47 @@
   gap: 8px;
   margin-top: -80px;
 }
+
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.field {
+  position: inherit;
+  width: 400px;
+  margin: 10px 0 10px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+}
+
+.login {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.links {
+  width: 400px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item {
+  text-decoration: none;
+  color: black;
+}
+
+.link-item:hover {
+  cursor: pointer;
+  color: rgb(74, 173, 238);
+}
