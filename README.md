@@ -43,6 +43,7 @@ The Blog app  we created a fully functional website that will show the list of p
 
 
 - Create database using migrations
+-Add devise
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -93,12 +94,19 @@ Install this project with:
 - Twitter: [@githubhandle](https://twitter.com/MANZITresor3)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/manzi-tresor-783b4022a/)
 
+👤 **Cosywasswa**
+
+- GitHub: [@cosywasswa](https://github.com/cosywasswa)
+- LinkedIn: [cosmas-wasswa](https://www.linkedin.com/in/cosmas-wasswa)
+
+
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] Add Interface
+- [ ] Add Authirization
 
 
 
