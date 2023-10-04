@@ -11,13 +11,13 @@ development:
   <<: *default
   database: blog_app_development
   user: postgres
-  password: manzi
+  password: Wasswa2023
 
 test:
   <<: *default
   database: blog_app_test
   user: postgres
-  password: manzi
+  password: Wasswa2023
 
 
 
